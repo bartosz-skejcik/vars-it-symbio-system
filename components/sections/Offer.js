@@ -172,7 +172,7 @@ export const Offer = ({ isSubpage = false }) => {
                                             <p className="text-gray-600 mb-4 flex-grow">
                                                 {item.description}
                                             </p>
-                                            <a
+                                            <Link
                                                 href={item.link}
                                                 className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors mt-auto"
                                             >
@@ -180,7 +180,7 @@ export const Offer = ({ isSubpage = false }) => {
                                                 <span className="material-symbols-outlined ml-1 text-sm">
                                                     arrow_forward
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 )}
@@ -191,12 +191,12 @@ export const Offer = ({ isSubpage = false }) => {
 
                 {!isSubpage && (
                     <div className="mt-12 text-center">
-                        <a
+                        <Link
                             href="/oferta"
                             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
                             PEŁNA OFERTA
-                        </a>
+                        </Link>
                     </div>
                 )}
             </div>

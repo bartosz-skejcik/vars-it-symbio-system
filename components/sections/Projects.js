@@ -160,12 +160,12 @@ export const Projects = ({ isSubpage = false }) => {
 
                 {!isSubpage && (
                     <div className="mt-12 text-center">
-                        <a
+                        <Link
                             href="/realizacje"
                             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
                             WSZYSTKIE REALIZACJE
-                        </a>
+                        </Link>
                     </div>
                 )}
             </div>

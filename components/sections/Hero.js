@@ -76,22 +76,22 @@ export const Hero = () => {
 
                                 <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8 w-full sm:w-auto">
                                     {heroButtons.map((button, idx) => (
-                                        <a
+                                        <Link
                                             key={idx}
                                             href={button.href}
                                             className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105 text-center"
                                         >
                                             {button.text}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
 
-                                <a
+                                <Link
                                     href="/oferta"
                                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                                 >
                                     ZOBACZ OFERTĘ
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

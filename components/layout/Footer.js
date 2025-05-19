@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Linkedin, Instagram } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
     const quickLinks = [
@@ -51,13 +52,13 @@ export const Footer = () => {
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((link, index) => (
-                                <a
+                                <Link
                                     key={index}
                                     href={link.href}
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
                                     {link.icon}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -69,12 +70,12 @@ export const Footer = () => {
                         <ul className="space-y-2">
                             {quickLinks.map((link, index) => (
                                 <li key={index}>
-                                    <a
+                                    <Link
                                         href={link.href}
                                         className="text-gray-400 hover:text-white transition-colors"
                                     >
                                         {link.text}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -87,12 +88,12 @@ export const Footer = () => {
                         <ul className="space-y-2">
                             {serviceLinks.map((link, index) => (
                                 <li key={index}>
-                                    <a
+                                    <Link
                                         href={link.href}
                                         className="text-gray-400 hover:text-white transition-colors"
                                     >
                                         {link.text}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -105,13 +106,13 @@ export const Footer = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 text-sm text-gray-400 items-center">
                         {legalLinks.map((link, index) => (
-                            <a
+                            <Link
                                 key={index}
                                 href={link.href}
                                 className="hover:text-white transition-colors"
                             >
                                 {link.text}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>

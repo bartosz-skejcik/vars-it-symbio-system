@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Link from "next/link";
 
 export const Contact = ({ isSubpage = false }) => {
     const contactInfo = [
@@ -129,7 +130,7 @@ export const Contact = ({ isSubpage = false }) => {
 
                             {isSubpage && (
                                 <div className="mt-8 flex justify-center md:justify-start">
-                                    <a
+                                    <Link
                                         href="https://goo.gl/maps/7PUY631wgXLyqJvR6"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -137,7 +138,7 @@ export const Contact = ({ isSubpage = false }) => {
                                     >
                                         <MapPin size={18} className="mr-2" />
                                         Wyznacz trasę
-                                    </a>
+                                    </Link>
                                 </div>
                             )}
                         </div>
