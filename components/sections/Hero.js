@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
