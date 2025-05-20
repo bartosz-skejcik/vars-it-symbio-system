@@ -72,7 +72,7 @@ export const Projects = ({ isSubpage = false }) => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
                             Realizacje
                         </h2>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+                        <div className="w-20 h-1 bg-red-600 mx-auto"></div>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
                             Firmy, które nam zaufały
                         </p>
@@ -83,6 +83,7 @@ export const Projects = ({ isSubpage = false }) => {
                     <div className="mb-8">
                         <h3 className="text-xl text-blue-600 font-medium mb-2">
                             Firmy, które nam zaufały
+                            <span className="inline-block ml-2 h-2 w-2 rounded-full bg-red-500"></span>
                         </h3>
                     </div>
                 )}
@@ -140,6 +141,7 @@ export const Projects = ({ isSubpage = false }) => {
                                         key={index}
                                         className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer h-72"
                                     >
+                                        <div className="absolute top-0 right-0 w-0 h-0 border-t-[30px] border-t-red-500 border-l-[30px] border-l-transparent z-10"></div>
                                         <img
                                             src={project.image}
                                             alt={project.alt}

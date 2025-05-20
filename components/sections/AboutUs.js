@@ -61,7 +61,7 @@ export const AboutUs = ({ isSubpage = false }) => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
                             O nas
                         </h2>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+                        <div className="w-20 h-1 bg-red-600 mx-auto"></div>
                     </div>
                 )}
 
@@ -69,6 +69,7 @@ export const AboutUs = ({ isSubpage = false }) => {
                     <div className="mb-8">
                         <h3 className="text-xl text-blue-600 font-medium mb-2">
                             Poznaj nas i nasze możliwości
+                            <span className="inline-block ml-2 h-2 w-2 rounded-full bg-red-500"></span>
                         </h3>
                     </div>
                 )}
@@ -79,7 +80,7 @@ export const AboutUs = ({ isSubpage = false }) => {
                         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-10">
                             <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-blue-300 blur-xl"></div>
                             <div className="absolute bottom-40 right-10 w-40 h-40 rounded-full bg-blue-200 blur-xl"></div>
-                            <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-blue-400 blur-xl"></div>
+                            <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-red-400 blur-xl"></div>
                         </div>
                     )}
 
@@ -97,8 +98,9 @@ export const AboutUs = ({ isSubpage = false }) => {
                             } gap-12 md:gap-8`}
                         >
                             <div className="md:w-1/2">
-                                <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+                                <h3 className="text-2xl font-semibold mb-4 text-gray-800 relative">
                                     {section.title}
+                                    <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-red-500"></span>
                                 </h3>
                                 {section.content.map((paragraph, pIndex) => (
                                     <p
@@ -121,6 +123,7 @@ export const AboutUs = ({ isSubpage = false }) => {
                                             : "rounded-lg shadow-xl"
                                     } transition-transform duration-300 hover:scale-[1.02] group h-80 md:h-96`}
                                 >
+                                    <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-t-red-500 border-l-[40px] border-l-transparent z-10"></div>
                                     <img
                                         src={section.image}
                                         alt={section.alt}

@@ -55,7 +55,7 @@ export const Footer = () => {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="text-gray-400 hover:text-white transition-colors"
+                                    className="text-gray-400 hover:text-red-400 transition-colors"
                                 >
                                     {link.icon}
                                 </Link>
@@ -64,7 +64,7 @@ export const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">
+                        <h3 className="text-lg font-semibold mb-4 pb-2 border-b border-red-500 inline-block">
                             Szybkie linki
                         </h3>
                         <ul className="space-y-2">
@@ -82,7 +82,7 @@ export const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-4">
+                        <h3 className="text-lg font-semibold mb-4 pb-2 border-b border-red-500 inline-block">
                             Nasze usługi
                         </h3>
                         <ul className="space-y-2">

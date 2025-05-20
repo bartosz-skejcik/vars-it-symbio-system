@@ -37,6 +37,19 @@
     --color-primary-900: #3c08aa;
     --color-primary-950: #220174;
 
+    /* Red Accent Colors */
+    --color-accent-50: #fff1f1;
+    --color-accent-100: #ffe1e1;
+    --color-accent-200: #ffc7c7;
+    --color-accent-300: #ffa0a0;
+    --color-accent-400: #ff6b6b;
+    --color-accent-500: #ff3e3e;
+    --color-accent-600: #ed2121;
+    --color-accent-700: #c81818;
+    --color-accent-800: #a61717;
+    --color-accent-900: #8a1a1a;
+    --color-accent-950: #4c0a0a;
+
     /* Font Sizes */
     --font-size-xs: 12px / 19.2px;
     --font-size-sm: 14px / 21px;

@@ -92,6 +92,8 @@ export const Hero = () => {
                                 >
                                     ZOBACZ OFERTĘ
                                 </Link>
+                                {/* Red accent element */}
+                                <div className="absolute -bottom-12 left-0 h-1 w-20 bg-red-600"></div>
                             </div>
                         </div>
                     </div>
@@ -103,10 +105,10 @@ export const Hero = () => {
                         <button
                             key={index}
                             onClick={() => goToSlide(index)}
-                            className={`w-3 h-3 rounded-full bg-white transition-all duration-300 ${
+                            className={`h-3 rounded-full transition-all duration-300 ${
                                 index === currentSlide
-                                    ? "opacity-100 w-10"
-                                    : "opacity-70"
+                                    ? "bg-red-500 opacity-100 w-10"
+                                    : "bg-white opacity-70 w-3"
                             }`}
                             aria-label={`Go to slide ${index + 1}`}
                             aria-current={

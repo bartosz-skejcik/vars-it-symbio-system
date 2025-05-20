@@ -29,7 +29,7 @@ export const Navigation = () => {
                         <Link
                             key={index}
                             href={link.href}
-                            className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                            className="text-gray-700 hover:text-red-600 transition-colors duration-300"
                         >
                             {link.text}
                         </Link>
@@ -45,21 +45,21 @@ export const Navigation = () => {
 
                 <details className="sm:hidden relative mt-4 w-full">
                     <summary className="list-none cursor-pointer p-2 flex justify-center">
-                        <Menu size={28} className="text-blue-600" />
+                        <Menu size={28} className="text-red-600" />
                     </summary>
                     <div className="absolute right-0 left-0 sm:left-auto mt-2 w-full sm:w-48 bg-white rounded-md shadow-lg py-1 z-50">
                         {navLinks.map((link, index) => (
                             <Link
                                 key={index}
                                 href={link.href}
-                                className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                                className="block px-4 py-2 text-gray-700 hover:bg-red-50"
                             >
                                 {link.text}
                             </Link>
                         ))}
                         <Link
                             href="/kontakt"
-                            className="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                            className="block px-4 py-2 text-gray-700 hover:bg-red-50"
                         >
                             Kontakt
                         </Link>

@@ -3,9 +3,18 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export const Header = () => {
     const contactInfo = [
-        { icon: <Phone size={18} />, text: "531588850" },
-        { icon: <Mail size={18} />, text: "biuro@symbiosystem.pl" },
-        { icon: <MapPin size={18} />, text: "ul. Puławska 38, Piaseczno" },
+        {
+            icon: <Phone size={18} className="text-neutral-300" />,
+            text: "531588850",
+        },
+        {
+            icon: <Mail size={18} className="text-neutral-300" />,
+            text: "biuro@symbiosystem.pl",
+        },
+        {
+            icon: <MapPin size={18} className="text-neutral-300" />,
+            text: "ul. Puławska 38, Piaseczno",
+        },
     ];
 
     return (

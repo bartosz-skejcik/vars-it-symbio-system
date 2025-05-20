@@ -5,22 +5,22 @@ import Link from "next/link";
 export const Contact = ({ isSubpage = false }) => {
     const contactInfo = [
         {
-            icon: <MapPin size={20} className="text-blue-600" />,
+            icon: <MapPin size={20} className="text-red-500" />,
             title: "Adres:",
             content: ["05-500 Piaseczno, ul. Puławska 38"],
         },
         {
-            icon: <Phone size={20} className="text-blue-600" />,
+            icon: <Phone size={20} className="text-red-500" />,
             title: "Telefon:",
             content: ["531588850"],
         },
         {
-            icon: <Mail size={20} className="text-blue-600" />,
+            icon: <Mail size={20} className="text-red-500" />,
             title: "Email:",
             content: ["biuro@symbiosystem.pl"],
         },
         {
-            icon: <Clock size={20} className="text-blue-600" />,
+            icon: <Clock size={20} className="text-red-500" />,
             title: "Godziny pracy:",
             content: ["Poniedziałek - Piątek: 8:00 - 16:00"],
         },
@@ -39,7 +39,7 @@ export const Contact = ({ isSubpage = false }) => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
                             Kontakt
                         </h2>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+                        <div className="w-20 h-1 bg-red-600 mx-auto"></div>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
                             Skontaktuj się z nami, aby uzyskać więcej informacji
                             o naszych usługach.

@@ -29,7 +29,7 @@ export const Offer = ({ isSubpage = false }) => {
             title: "Obsługa obiektów komercyjnych",
             description:
                 "Kompleksowe usługi dla administratorów osiedli, magazynów, hal produkcyjnych i powierzchni biurowych.",
-            image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29tbWVyY2lhbCxidWlsZGluZ3x8fHx8fDE2OTgzNjczMjE&ixlib=rb-4.0.3&q=80&w=1080",
+            image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29tbWVyY2lhbCxidWlsZGluZ3x8fHx8fHx8MTY5ODM2NzMyMQ&ixlib=rb-4.0.3&q=80&w=1080",
             alt: "Obsługa obiektów komercyjnych",
             link: "/oferta#obiekty-komercyjne",
             fullDescription: isSubpage
@@ -45,7 +45,7 @@ export const Offer = ({ isSubpage = false }) => {
                   title: "Elastyczne rozwiązania",
                   description:
                       "Dostosowujemy częstotliwość i zakres usług do indywidualnych potrzeb klientów.",
-                  image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2xlYW5pbmcsc2VydmljZXx8fHx8fDE2OTgzNjgxMjE&ixlib=rb-4.0.3&q=80&w=1080",
+                  image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2xlYW5pbmcsc2VydmljZXx8fHx8fHx8MTY5ODM2NjgxMjE&ixlib=rb-4.0.3&q=80&w=1080",
                   alt: "Elastyczne rozwiązania",
                   link: "/oferta#elastycznosc",
                   fullDescription:
@@ -70,10 +70,10 @@ export const Offer = ({ isSubpage = false }) => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
                             Oferta
                         </h2>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+                        <div className="w-20 h-1 bg-red-600 mx-auto"></div>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                            Usługi kompleksowego utrzymania czystości obiektów
-                            oraz opieki nad terenem zielonym
+                            Nasze kompleksowe usługi sprzątania i utrzymania
+                            czystości
                         </p>
                     </div>
                 )}
@@ -83,6 +83,7 @@ export const Offer = ({ isSubpage = false }) => {
                         <h3 className="text-xl text-blue-600 font-medium mb-2">
                             Usługi kompleksowego utrzymania czystości obiektów
                             oraz opieki nad terenem zielonym
+                            <span className="inline-block ml-2 h-2 w-2 rounded-full bg-red-500"></span>
                         </h3>
                         <p className="text-gray-700 mb-8">
                             SYMBIOSYSTEM w ramach swej działalności oferuje
